@@ -12,6 +12,12 @@ Run the `build.sh` script, tested on Kali Linux. Alternatively, build the docker
 
 Installation using the `build.sh` script on Kali Linux will provide a new `socat23` command to use. For the docker image, example invocation would be:
 
+Window 1
 ```bash
 docker run --rm -p 50000:80 socat23:latest socat -v -ls tcp4-listen:80,fork,reuseaddr ssl:www.google.com:443,verify=0
+```
+
+Window 2
+```bash
+curl http://localhost:80/ --header "Host: www.google.com"
 ```
