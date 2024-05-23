@@ -19,5 +19,5 @@ docker run --rm -p 50000:80 socat23:latest socat -v -ls tcp4-listen:80,fork,reus
 
 Window 2
 ```bash
-curl http://localhost:80/ --header "Host: www.google.com"
+curl http://localhost:50000/ -H "Host: www.google.com"
 ```
