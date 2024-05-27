@@ -9,7 +9,7 @@ set -e
 # https://en.wikipedia.org/wiki/OpenSSL
 #   sslv2 is ripped from 1.1.0 so build latest 1.0.2
 opensslversion=1.0.2m
-socatversion=1.7.3.2
+socatversion=1.7.3.4
 working_directory=/usr/local/src
 
 # OpenSSL first
